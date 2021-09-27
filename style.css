@@ -1,18 +1,46 @@
 h1{
   font-size: 45px;
-  font-family: garamond;
+  font-family: 'Radley', serif;
+  color: #2B3C49;
 }
 h4{
   font-size: 20px;
+  color: #2B3C49;
+}
+p{
+  font-family: 'Arapey', serif;
+  color: #5B7D99;
 }
 body{
-  font-family: garamond;
-  background-color: #D7C2F4;
+  font-family: 'Radley', serif;
+  background-color: #0000;
   color: #39373D;
+  text-align: center;
 }
-ul{
-  color: #525056;
+.center {
+  text-align: center;
+  list-style-position: inside;
 }
-ol{
-  color: #525056;
+ol.center li{
+ margin-left: -2%;
+}
+ul.center li{
+ margin-left: -3%;
+}
+#solid{
+  border:solid #1B4B74 1.5px;
+}
+#dashed{
+  border:dashed #1B4B74 1px;
+}
+#hero{
+  width:100vw;
+  height:680px;
+  margin:0px;
+  padding: 0px;
+  position: relative;
+}
+#ordered, #unordered{
+  color: #5B7D99;
+  font-family: 'Arapey', serif;
 }
