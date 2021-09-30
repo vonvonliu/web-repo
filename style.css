@@ -5,6 +5,7 @@ h1{
 }
 h4{
   font-size: 20px;
+  font-family: 'Radley', serif;
   color: #2B3C49;
 }
 p{
@@ -12,7 +13,7 @@ p{
   color: #5B7D99;
 }
 body{
-  font-family: 'Radley', serif;
+  font-family: 'Arapey', serif;
   background-color: #0000;
   color: #39373D;
   text-align: center;
@@ -28,6 +29,9 @@ ul.center li{
  margin-left: -3%;
 }
 #solid{
+  border:solid #1B4B74 1.5px;
+}
+#solid1{
   border:solid #1B4B74 1.5px;
 }
 #dashed{
