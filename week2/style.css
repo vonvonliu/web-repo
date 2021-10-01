@@ -36,11 +36,6 @@ p{
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
-#buttonTop{
-  background-color: #CFB87C;
-  border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
-}
 #hero{
   width:100vw;
   height:650px;

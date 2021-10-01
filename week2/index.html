@@ -17,7 +17,7 @@
         <p>This is a page about the University of Colorado at Boulder.</p>
         <p>This university is one of the CU schools along with University of Colorado Colorado Springs, Denver, and the Anschutz medical campus.</p>
         <p>The campus is known for its <strong>beautiful</strong> views of the Flatirons, the snow in the winter, and the party scene!</p>
-        <p><a href="#footer"><button id="buttonEnd">Go to end</button></a></p>
+        <button type="button" id="buttonEnd">Go to end</button>
       </section>
     </section>
     <section id="one">
@@ -36,7 +36,7 @@
     <section id="footer">
       <h2>Want to learn more?</h2>
       <p>Visit the <a href="https://www.colorado.edu/"> CU website!</a></p>
-      <p><a href="#pagetop"><button id="buttonTop">Go to top</button></a></p>
+      <button type="button" id="buttonTop">Go to top</button>
     </section>
     <script>
           document.getElementById("button").addEventListener("click", function(){alert("This is the CU logo!")});
@@ -50,11 +50,8 @@
             });
           }
           function endButtonClicked(){
-            window.scroll({
-              end: 0,
-              left: 0,
-              behavior: 'smooth'
-            });
+            window.scrollTo(0,document.body.scrollHeight);
+          }
     </script>
   </body>
 </html>
