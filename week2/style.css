@@ -21,13 +21,22 @@ p{
 .background{
   background-color: #A2A4A3;
 }
-.mybutton{
+#button{
+  background-color: #CFB87C;
+}
+#buttonTop{
   background-color: #CFB87C;
   border-radius: 8px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
-#button{
+#buttonEnd{
+  background-color: #CFB87C;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+#buttonTop{
   background-color: #CFB87C;
   border-radius: 8px;
   font-family: 'Roboto', sans-serif;

@@ -17,7 +17,7 @@
         <p>This is a page about the University of Colorado at Boulder.</p>
         <p>This university is one of the CU schools along with University of Colorado Colorado Springs, Denver, and the Anschutz medical campus.</p>
         <p>The campus is known for its <strong>beautiful</strong> views of the Flatirons, the snow in the winter, and the party scene!</p>
-        <p><a href="#footer"><button class="mybutton">Go to end</button></a></p>
+        <p><a href="#footer"><button id="buttonEnd">Go to end</button></a></p>
       </section>
     </section>
     <section id="one">
@@ -29,17 +29,32 @@
           <li>Take the BuffBus!</li>
         </ul>
       <button type="button" name="button" id="button">
-        <p>Click me!</p>
+        Click me!
         <img src="assets/Colorado_Buffaloes_logo.svg.png" style="width:20vw" alt="CU logo">
       </button>
     </section>
     <section id="footer">
       <h2>Want to learn more?</h2>
       <p>Visit the <a href="https://www.colorado.edu/"> CU website!</a></p>
-      <p><a href="#pagetop"><button class="mybutton">Go to top</button></a></p>
+      <p><a href="#pagetop"><button id="buttonTop">Go to top</button></a></p>
     </section>
     <script>
           document.getElementById("button").addEventListener("click", function(){alert("This is the CU logo!")});
+          document.getElementById("buttonTop").addEventListener("click", topButtonClicked);
+          document.getElementById("buttonEnd").addEventListener("click", endButtonClicked);
+          function topButtonClicked(){
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            });
+          }
+          function endButtonClicked(){
+            window.scroll({
+              end: 0,
+              left: 0,
+              behavior: 'smooth'
+            });
     </script>
   </body>
 </html>
