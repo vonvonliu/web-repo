@@ -2,32 +2,44 @@
 <html lang="en">
   <head>
     <title>Encyclopedia Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="background">
     <section id="pagetop">
-      <h1>Encyclopedia Page About CU Boulder!</h1>
-      <p>This is a page about the University of Colorado at Boulder.</p>
-      <p>This university is one of the CU schools, along with University of Colorado Colorado Springs, Denver, and the Anschutz medical campus.</p>
-      <p>The campus is known for its <strong>beautiful</strong> views of the Flatirons, the snow in the winter, and the party scene!</p>
-      <p><a href="#footer">Go to end</a></p>
+      <hr id="dashed">
+      <img id='hero' alt="picture of CU Boulder campus aerial view" src="assets/bouldercampus.jpg">
+      <hr id="dashed1">
+      <section id='pagetoptext'>
+        <h1>Encyclopedia Page About CU Boulder!</h1>
+        <p>This is a page about the University of Colorado at Boulder.</p>
+        <p>This university is one of the CU schools along with University of Colorado Colorado Springs, Denver, and the Anschutz medical campus.</p>
+        <p>The campus is known for its <strong>beautiful</strong> views of the Flatirons, the snow in the winter, and the party scene!</p>
+        <p><a href="#footer"><button class="mybutton">Go to end</button></a></p>
+      </section>
     </section>
-    <img src="https://www.commonapp.org/static/e8daca1b19631c10d65e9a79f0559573/university-colorado-boulder_599.jpg" style="width:90vw" alt="aerial view of CU Boulder">
-    <section>
-      <h3>Here are some fun activities to do while you vist the campus:</h3>
+    <section id="one">
+      <h2>Here are some fun activities to do while you vist the campus:</h2>
         <ul>
           <li>Visit the Ralphie statue next to the stadium.</li>
           <li>Take a picture with the Flatirons as your background!</li>
           <li>Grab some food at the C4C (or C5C).</li>
           <li>Take the BuffBus!</li>
         </ul>
-    </section>
-    <img src="assets/Colorado_Buffaloes_logo.svg.png" style="width:20vw" alt="CU logo">
-    <section>
-      <h3>Want to learn more about CU Boulder?</h3>
-      <p>Visit <a href="https://www.colorado.edu/"> our website!</a></p>
+      <button type="button" name="button" id="button">
+        <p>Click me!</p>
+        <img src="assets/Colorado_Buffaloes_logo.svg.png" style="width:20vw" alt="CU logo">
+      </button>
     </section>
     <section id="footer">
-      <p><a href="#pagetop">Back to top</a></p>
+      <h2>Want to learn more?</h2>
+      <p>Visit the <a href="https://www.colorado.edu/"> CU website!</a></p>
+      <p><a href="#pagetop"><button class="mybutton">Go to top</button></a></p>
     </section>
+    <script>
+          document.getElementById("button").addEventListener("click", function(){alert("This is the CU logo!")});
+    </script>
   </body>
 </html>
