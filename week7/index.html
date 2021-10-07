@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/17596c29da.js" crossorigin="anonymous"></script>
+    <title>Quote Machine of Encouragement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  </head>
+  <body>
+    <section id="quote">
+      <h2 id="qtext">Welcome to the Quote Machine! Click the button to generate an encouraging quote!</h2>
+      <button id="qbutton">New Quote</button>
+    </section>
+    <section id="buttonMore">
+      <button onclick="location.href='https://www.brainyquote.com/topics/positive-quotes'" type="button">
+         Get more positive quotes
+       </button>
+    </section>
+    <section id="flex">
+      <div id="one" class="flexitem">
+        <img src="assets/fb.svg" alt="facebook" class="social">
+      </div>
+      <div id="two" class="flexitem">
+        <img src="assets/twitter.svg" alt="twitter" class="social">
+      </div>
+      <div id="three" class="flexitem">
+        <img src="assets/IG.svg" alt="instagram" class="social">
+      </div>
+      <div id="four" class="flexitem">
+        <img src="assets/snap.svg" alt="snapchat" class="social">
+      </div>
+    </section>
+
+    <script>
+      const quotes = ["Success is not final, failure is not fatal: it is the courage to continue that counts.", "Your self-worth is not defined by how other people treat you.", "Believe you can and you're halfway there.","Try to be a rainbow in someone else's cloud.","If you have good thoughts, they will shine out of your face like sun beams and you will always look lovely.","Happiness often sneaks in through a door you didn't know you left open.","Act as if what you do makes a difference. It does.","Inhale, exhale, it is well, it is well. All of this is a part of the story you will tell.","I’m going to make everything around me beautiful - that will be my life.","Don’t compare your beginning to someone else’s middle.","It always seems impossible until it’s done.", "Life goes by fast. Enjoy it. Calm down. It’s all funny."];
+      quoteCount = 0;
+      document.getElementById('qbutton').addEventListener("click", newQuote);
+      function newQuote(){
+        document.getElementById("qtext").innerHTML = quotes[quoteCount];
+        if(quoteCount==(quotes.length-1)){
+          quoteCount = 0;
+        }else{
+          quoteCount +=1;
+        }
+      }
+    </script>
+  </body>
+</html>
