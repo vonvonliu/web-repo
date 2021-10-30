@@ -1,0 +1,71 @@
+body{
+  background-color: #d4c3b3;
+}
+h1{
+  font-size: 72px;
+  text-align: center;
+  font-family: "Judson";
+  color: #64645c;
+}
+h3{
+  font-size: 56px;
+  text-align: center;
+  font-family: "Judson";
+  color: #64645c;
+}
+ul{
+  font-size: 24px;
+  color: #69502E;
+}
+h6{
+  font-size: 24px;
+  color: #385028;
+  text-align: center;
+}
+#choices{
+  margin: 3vh 2vw;
+  text-align: center;
+}
+#menu{
+  position: absolute;
+  background-color: #94B587;
+  padding: 10px 30px 50px 30px;
+  margin: 3vh 2vw;
+  font-family: "Quando";
+  filter: drop-shadow(3px 3px 4px rgba(0,0,0,.5));
+  border-radius: 10px;
+  width: 25%;
+  left: 70px;
+}
+#quoteOfDay{
+  position: absolute;
+  background-color: #9b916f;
+  color: #385028;
+  right: 70px;
+  width: 50%;
+  padding: 10px 30px 50px 30px;
+  margin: 3vh 2vw;
+  font-family: "Quando";
+  filter: drop-shadow(3px 3px 4px rgba(0,0,0,.5));
+  border-radius: 10px;
+}
+.dayButton{
+  font-family: "Judson";
+  background-color: #ebccac;
+  color: #64645c;
+  font-size: 20px;
+  border-radius: 18px;
+  padding: 10px 50px;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  box-shadow: 6px 6px 5px #888;
+  border-color: #e7e2d8;
+  border: 1px #64645c solid;;
+}
+.dayButton:hover{
+  border: 2px #e7e2d8 solid;
+}
+
+.dayButton:active{
+  background-color: #9b8464;
+}
