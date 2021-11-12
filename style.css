@@ -1,7 +1,58 @@
-h1{
-  font-size: 45px;
-  font-family: 'Radley', serif;
-  color: #2B3C49;
+@media screen and (min-width: 700px){
+  .hero-text{
+    text-align: center;
+    position: absolute;
+    font-family: 'Radley', serif;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .hero{
+    width:100vw;
+    height:680px;
+    margin:0px;
+    padding: 0px;
+    position: relative;
+  }
+  h1{
+    font-size: 45px;
+    font-family: 'Radley', serif;
+    color: #2B3C49;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .hero-text{
+    text-align: center;
+    position: absolute;
+    font-family: 'Radley', serif;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .hero{
+    width:100vw;
+    height:340px;
+    margin:0px;
+    padding: 0px;
+    position: relative;
+  }
+  h1{
+    font-size: 25px;
+    font-family: 'Radley', serif;
+    color: #2B3C49;
+  }
+}
+#items{
+  display:flex;
+  margin: 0vh 10vw 0 10vw;
+  padding-top: 20px;
+  order: 3;
+  flex-direction: row;
 }
 h4{
   font-size: 20px;
@@ -28,23 +79,7 @@ ol.center li{
 ul.center li{
  margin-left: -3%;
 }
-.hero{
-  width:100vw;
-  height:680px;
-  margin:0px;
-  padding: 0px;
-  position: relative;
-}
-.hero-text{
-  text-align: center;
-  position: absolute;
-  font-family: 'Radley', serif;
-  font-size: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+
 .solid{
   border:solid #1B4B74 1.5px;
 }
@@ -52,7 +87,8 @@ ul.center li{
   border:dashed #1B4B74 1px;
   width:60vw;
 }
-#ordered, #unordered{
+#ordered, #unordered, #page{
+  flex-grow: 1;
   color: #5B7D99;
   font-family: 'Arapey', serif;
 }
